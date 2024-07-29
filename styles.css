@@ -1,5 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #242424;
+    color: white;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 /* Hero */
@@ -19,5 +31,367 @@ body {
 }
 
 .heading__line-1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.heading__line-2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.heading__line-1 span {
+    color: #40ffaf;
+}
+
+.heading a {
+    border: 1px solid #40ffaf;
+    padding: 10px 30px;
+    color: #40ffaf;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.heading a:hover,
+.heading a:focus {
+    padding: 11px 33px;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.heading__link i {
+    margin-left: 5px;
+}
+
+/* Nav bar */
+.non-hero {
+}
+
+.nav-bar {
+    width: 100vw;
+    margin: 0 auto;
+    background: #4a4a4a;
+    z-index: 1;
+}
+
+.nav-bar__list {
+    margin: 0;
+    padding: 20px 70px;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.nav-bar__section {
+    margin: 0px 25px;
+    font-size: 22px;
+}
+
+.nav-bar--fixed {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.nav-bar__section a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar__section a:hover,
+.nav-bar__section a:focus {
+    text-decoration: none;
+    color: #40ffaf;
+}
+
+
+/* About */
+
+.about {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.about h1 {
+    margin: 30px auto 0 auto;
+    font-size: 60px;
+    border-bottom: 2px solid #40ffaf;
+    width: 185px;
+}
+
+.about-section {
+    margin: 40px auto 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about p {
+    width: 450px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.about a {
+    text-decoration: none;
+    color: #40ffaf;
+}
+
+.about a:hover,
+.about a:focus {
+    color: #38fcff;
+}
+
+.about img {
+    width: 370px;
+    border-radius: 50%;
+}
+
+.about ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.about li {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
     font-size: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* Projects */
+
+.projects {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.projects h1 {
+    margin: 0 auto;
+    font-size: 60px;
+    border-bottom: 2px solid #40ffaf;
+    width: 240px;
+}
+
+.projects ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 560px;
+    margin: 50px 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.project-container:hover,
+.project-container:focus {
+    background: #4a4a4a;
+}
+
+.project-container h1 {
+    margin: 40px auto 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #40ffaf;
+    border-bottom: none;
+}
+
+.project-container p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 20px 15px;
+}
+
+.project-container img {
+    width: 400px;
+    
+}
+
+.project-container a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    margin: 25px auto;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.project-container a:hover,
+.project-container a:focus {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Contact */
+
+.contact {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact h1 {
+    margin: 0 auto;
+    font-size: 60px;
+    border-bottom: 2px solid #40ffaf;
+    width: 240px;
+}
+
+.contact-form {
+    margin: 0;
+}
+
+.contact form {
+    width: 530px;
+    margin: 0 auto;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-sender-info-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-labels {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: white;
+    background: none;
+    font-family: inherit;
+    transition: background-color 0.3s ease;
+}
+
+textarea:focus, 
+input:focus,
+textarea:focus{
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    border-color: #aaa;
+}
+
+textarea {
+    width: 530px;
+    height: 150px;
+}
+
+.form-btns {
+    margin: 20px auto 20px 0;
+}
+
+.form-btn {
+    padding: 15px 25px;
+    font-size: 15px;
+    margin: 0 15px 0 0;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+#reset {
+    background: none;
+    color: white;
+}
+
+#reset:hover,
+#reset:focus {
+    background: #363636;
+}
+
+.form-btn:focus,
+.form-btn:hover {
+    cursor: pointer;
+    background: #dbdbdb;
+}
+
+footer {
+    margin: 0;
+    background: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    font-family: inherit;
+}
+
+.footer-btns {
+    display: flex;
+}
+/* Footer */
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+    font-size: 35px;
+    transition: font-size 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+    font-size: 40px;
+}
+
+footer a:visited {
+    color: white;
 }
