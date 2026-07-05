@@ -9,12 +9,16 @@
 
     <body>
         <section class="hero" id="hero">
+            <canvas id="hero-canvas"></canvas>
             <div class="heading">
-                <div class="heading__line-1">
+                <div class="heading__line-1 fade-in-up" style="animation-delay: 0.2s;">
                     Hi, I'm <span>Wesley</span>.
                 </div>
-                <div class="heading__line-2">I'm an aspiring full stack developer.</div>
-                <a href="#about" class="heading__link">Learn More <i class="fa-solid fa-angle-down"></i></a>
+                <div class="heading__line-2 fade-in-up" style="animation-delay: 0.5s;">I'm a software engineer who loves solving systems and performance problems.</div>
+                <div class="heading__actions fade-in-up" style="animation-delay: 0.8s;">
+                    <a href="#about" class="heading__link">Learn More <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="./resume.pdf" target="_blank" class="heading__link heading__link--white">Resume <i class="fa-solid fa-file-pdf"></i></a>
+                </div>
             </div>
         </section>
 
@@ -23,7 +27,7 @@
                 <li class="nav-bar__section"><a href="#hero">Home</a></li>
                 <li class="nav-bar__section"><a href="#about">About</a></li>
                 <li class="nav-bar__section"><a href="#projects">Projects</a></li>
-                <li class="nav-bar__section"><a href="#contact">Contact</a></li>
+                <li class="nav-bar__section"><a href="#experience">Experience</a></li>
             </ul>
         </nav>
 
@@ -31,21 +35,23 @@
             <h1>About</h1>
             <div class="container">
                 <div class="about-section">
-                    <p>Hello! I’m Wesley Jeong, a third year Computer Science major at <a href="https://www.gatech.edu/" target="_blank">Georgia Tech</a>. I am aspiring to become a software engineer, with a strong focus on full-stack and game development.
+                    <p>Hello! I’m Wesley Jeong, a software engineer and recent Computer Science graduate from <a href="https://www.gatech.edu/" target="_blank">Georgia Tech</a>. I'm currently a Software Engineer Intern on Kargo AI's Edge team, where I work on system optization and performance tuning.
                         <br><br>
-                        With a solid foundation in frontend development, databases, and software architecture, I’m excited to tackle new challenges and contribute to the tech community. Outside of programming, I enjoy staying active by playing soccer and tennis.</p>
-                    <img src="./images/wesley.jpeg">
+                        With a solid foundation in databases, software architecture, and game development, I’m always excited to tackle new challenges and contribute to the tech community. Outside of programming, I enjoy staying active by playing soccer and tennis.</p>
+                    <img src="./images/wesley.jpg">
                 </div>
             </div>
             <ul>
-                <li><i class="fa-brands fa-java"></i></li>
-                <li><i class="fa-brands fa-python"></i></li>
-                <li><i class="fa-brands fa-js"></i></li>
-                <li><i class="fa-brands fa-html5"></i></li>
-                <li><i class="fa-brands fa-css3-alt"></i></li>
-                <li><i class="fa-solid fa-database"></i></li>
-                <li><i class="fa-brands fa-android"></i></li>
-                <li><i class="fa-brands fa-unity"></i></li>
+                <li data-name="Java"><i class="fa-brands fa-java"></i></li>
+                <li data-name="Python"><i class="fa-brands fa-python"></i></li>
+                <li data-name="JavaScript"><i class="fa-brands fa-js"></i></li>
+                <li data-name="C#"><i class="fa-solid fa-code"></i></li>
+                <li data-name="SQL"><i class="fa-solid fa-database"></i></li>
+                <li data-name="Spring Boot"><i class="fa-solid fa-leaf"></i></li>
+                <li data-name="AWS"><i class="fa-brands fa-aws"></i></li>
+                <li data-name="Git"><i class="fa-brands fa-git-alt"></i></li>
+                <li data-name="Docker"><i class="fa-brands fa-docker"></i></li>
+                <li data-name="Unity"><i class="fa-brands fa-unity"></i></li>
             </ul>
         </section>
 
@@ -54,53 +60,106 @@
 
             <ul>
                 <li class="project-container">
+                    <h1>FPL Analyzer</h1>
+                    <p>Full-stack app that scores 600+ Fantasy Premier League players and recommends top picks</p>
+                    <img src="./images/fpl-analyzer.png">
+                    <div class="project-tech"><span>React</span><span>Express</span><span>JavaScript</span></div>
+                    <a href="https://github.com/wesleyj25ng/fpl-analyzer" target="_blank">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li class="project-container">
+                    <h1>Realtime Telemetry Streaming</h1>
+                    <p>CCSDS-style packetization and real-time video streaming over UDP with sequence tracking, loss detection, and protocol debugging tools</p>
+                    <img src="./images/telemetry.png">
+                    <div class="project-tech"><span>Python</span></div>
+                    <a href="https://github.com/wesleyj25ng/realtime-telemetry-streaming" target="_blank">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                </li>
+                <li class="project-container">
                     <h1>Chronobreak</h1>
                     <p>Single-player 2D puzzle platformer game involving time-freezing mechanics</p>
                     <img src="./images/chronobreak.png">
+                    <div class="project-tech"><span>C#</span><span>Unity</span></div>
                     <a href="https://github.com/wesleyj25ng/Chronobreak" target="_blank">Learn More <i class="fa-solid fa-chevron-right"></i></a>
                 </li>
                 <li class="project-container">
                     <h1>Wrappedify</h1>
                     <p>Personal Spotify music insight dashboard application</p>
                     <img src="./images/wrappedify.png">
+                    <div class="project-tech"><span>Java</span><span>Android Studio</span></div>
                     <a href="https://github.com/ajiang4138/Wrappedify" target="_blank">Learn More <i class="fa-solid fa-chevron-right"></i></a>
-                </li>
-                <li class="project-container">
-                    <h1>Class Scheduler</h1>
-                    <p>Planning and to-do list application for college students</p>
-                    <img src="./images/class-scheduler.png">
-                    <a href="https://github.com/hjjani/CS2340ClassScheduler" target="_blank">Learn More <i class="fa-solid fa-chevron-right"></i></a>
                 </li>
             </ul>
         </section>
 
-
-        
-
-        <section class="contact content-padding" id="contact">
-            <h1>Contact</h1>
-                <form class="contact-form">
-                    <div class="form-sender-info-wrapper">
-                        <div class="form-labels">
-                            <label for="form-name">Name</label>
-                            <input type="text" minlength="2" id="form-name">
-                        </div>
-                        <div class="form-labels">
-                            <label for="form-email">Email</label>
-                            <input type="email" id="form-email">                   
-                        </div>
-                    </div>
-
-                    <div class="form-labels">
-                        <label for="form-message">Message</label>
-                        <textarea id="form-message"></textarea>
-                    </div>
-
-                    <div class="form-btns">
-                        <button class="form-btn" id="send-msg">SEND MESSAGE</button>
-                        <button type="button" class="form-btn" id="reset">RESET</button>
-                    </div>
-                </form>
+        <section class="experience" id="experience">
+            <h1>Experience</h1>
+            <div class="timeline-columns">
+                <div class="timeline-column">
+                    <h2 class="timeline-column-title">Career</h2>
+                    <ul class="timeline">
+                        <li class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h2>Software Engineer Intern <span>@ Kargo</span></h2>
+                                <p class="timeline-date">June 2026 – Present · San Francisco, CA</p>
+                                <p>Cut image-retrieval latency on Kargo's multi-camera pipeline with a caching layer, and built internal tooling for testing, deployment, and configuration automation.</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h2>Software Engineer Intern <span>@ Ecliptic Enterprises</span></h2>
+                                <p class="timeline-date">May 2025 – July 2025 · Pasadena, CA</p>
+                                <p>Worked on real-time telemetry and video streaming systems for spacecraft subsystem monitoring and debugging.</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h2>Software Engineer Intern <span>@ Hyosung FMS</span></h2>
+                                <p class="timeline-date">May 2024 – July 2024 · Seoul, South Korea</p>
+                                <p>Built backend services and automation tooling for client communications using Spring Boot and MySQL.</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h2>Game Developer <span>@ Georgia Tech VIP Program</span></h2>
+                                <p class="timeline-date">January 2024 – May 2025 · Atlanta, GA</p>
+                                <p>Developed gameplay systems for a Unity-based strategy game simulating power grid operations in a collaborative research team.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="timeline-column">
+                    <h2 class="timeline-column-title">Education</h2>
+                    <ul class="timeline">
+                        <li class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h2>B.S. Computer Science <span>@ Georgia Tech</span></h2>
+                                <p class="timeline-date">2023 – 2026 · Atlanta, GA</p>
+                                <p>GPA 3.85. Threads in Information Internetworks and Media.</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h2>General Studies <span>@ University of Illinois Urbana-Champaign</span></h2>
+                                <p class="timeline-date">2022 – 2023 · Champaign, IL</p>
+                                <p>Started in Chemistry before transferring to Georgia Tech for Computer Science.</p>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h2>IB Diploma <span>@ Seoul Foreign School</span></h2>
+                                <p class="timeline-date">2018 – 2022 · Seoul, South Korea</p>
+                                <p>Completed the International Baccalaureate Diploma Programme.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <footer>
@@ -108,7 +167,7 @@
                 <a href="https://www.linkedin.com/in/wesley-jeong/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/wesleyj25ng" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
-            <p>WESLEY JEONG &copy2024</p>
+            <p>Contact me at <a href="mailto:wesleyj25ng@gmail.com">wesleyj25ng@gmail.com</a></p>
         </footer>
         <script src="script.js"></script>
     </body>
